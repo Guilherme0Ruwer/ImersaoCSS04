@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body{
+    background-image: url('https://img.elo7.com.br/product/original/1A9E049/papel-de-parede-autocolante-geometrico-cores-claras-papel-de-parede-geometrico-preto.jpg');
+    background-size: auto 100vh;
+    font-family: Bold;
+    height: 100vh;
+    font-size: 12;
+  }
+  
+  @media (min-width: 350px) {
+    font-size: 14;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 18;
+  }
+
+  @media (min-width: 350px) {
+    .contato a {
+      font-size: 2em;
+    }
+  }
+
+  .menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #FF9955;
+  }
+  .menu a:hover {
+    font-family: Arial;
+    text-decoration: underline;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .site-title {
+    color: teal;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .site-subtitle {
+    color: teal;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .contato h2,
+  .portfolio h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    margin-bottom: 2em;
+    text-shadow: 30px 20px 2px #808080;
+  }
+
+  @media (min-width: 560px) {
+  .portfolio .grid {
+    display:grid;
+    gap: 2em;
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+  
+  .img-portfolio {
+    height: 300px;
+    width: 232px;
+    color: teal;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu a {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .contato,
+  .portfolio {
+    padding: 2em;
+    min-height: 100vh;
+  }
+
+  .contato a {
+    color: darkblue;
+    font-size: 5em;
+    font-family: 'Balsamiq Sans', cursive;
+    transition: text-shadow 0.5s;
+  }
+
+  .contato a:active,
+  .contato a:hover {
+    text-shadow: 0px 0px 10px blue;
+  }
+
+  .contato .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-rows: 100px 100px;
+    padding: 10px 20px;
+  }
+
+  .titulos {
+    animation: linear 1.5s  animacaoTitulo forwards;
+    opacity: 0;
+    scale: 0.2;
+    transform: translateY(50vh);
+  }
+
+  @keyframes animacaoTitulo {
+    0% {
+
+    }
+
+    50% {
+      opacity: 0.5;
+      scale: 0.8;
+    }
+
+    100% {
+      opacity: 1;
+      scale: 1;
+      transform: translateY(0);
+    }
+  }
